@@ -14,13 +14,13 @@ function getWidth() {
 }
 
 share.addEventListener("click", function () {
-  if (width <= 980) {
+  if (width <= 800) {
     activeShareBar.style.visibility = "visible";
 
     activeShareBar.style.transform = "translate(0, 0px)";
     activeShareBar.style.transition =
       "all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97)";
-  } else if (width > 980) {
+  } else if (width > 800) {
     pop.classList.add("popover-big");
     white.style.visibility = "visible";
     share.style.visibility = "hidden";
@@ -38,5 +38,4 @@ close.addEventListener("click", function () {
   activeShareBar.style.transform = "translate(0, 100px)";
   activeShareBar.style.transition =
     "all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97)";
-  // shareBar.style.opacity = "1";
 });
